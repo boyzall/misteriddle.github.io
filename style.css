@@ -56,7 +56,7 @@ body {
   background-color: #160324;
   color: aqua;
   display: block;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   width: auto;
   height: 140px;
   margin-bottom: 20px;
