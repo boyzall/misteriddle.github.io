@@ -1,0 +1,441 @@
+body {
+  background-image: linear-gradient(to right, #051225, #160324);
+}
+.container {
+  width: 1100px;
+  height: auto;
+  margin: auto;
+  background-image: linear-gradient(to right, #051225, #160324);
+}
+.instagram {
+  width: 200px;
+  height: 200px;
+  background-image: url(img/instagram.png);
+  display: inline-block;
+  text-indent: 9999px;
+  position: absolute;
+  top: 15px;
+  right: 0px;
+}
+.containerLineHead {
+  width: auto;
+  opacity: 1;
+  height: 10px;
+}
+.lineHeadAn {
+  width: 40px;
+  height: 5px;
+  background-color: greenyellow;
+  border: solid 2px chartreuse;
+  border-radius: 50%;
+  box-shadow: 0 0 50px 10px greenyellow;
+  margin: 5px 0 0 0;
+  animation: lineHeadAnimation 1s infinite alternate ease-in-out;
+}
+@keyframes lineHeadAnimation {
+  0% {
+    width: 40px;
+    position: relative;
+  }
+  50% {
+    /* transform: translateX(300px); */
+    width: 200px;
+    height: 10px;
+    transition: 0s;
+  }
+  100% {
+    transform: translateX(1060px);
+  }
+}
+/* .header {
+  width: auto;
+  height: 200px;
+  border: red 2px solid;
+} */
+.header {
+  background-color: #160324;
+  color: aqua;
+  display: block;
+  text-transform: uppercase;
+  width: auto;
+  height: 140px;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  text-align: left;
+  box-shadow: 0px 2px 8px -3px aqua;
+}
+.header .title {
+  display: block;
+  color: aqua;
+  background-color: #160324;
+  font-family: "Comfortaa", cursive;
+  text-shadow: -10px 0px 30px aqua;
+  text-align: left;
+  font-size: 60px;
+  margin: 20px 0px 0px 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: 0.3s;
+  animation: HeaderAnimation 2s infinite ease-out alternate;
+}
+.containerSimple:hover .header .title {
+  /* text-decoration: line-through; */
+  text-shadow: 0px 0px 10px aqua;
+  margin: 40px 0px 0px 20px;
+}
+@keyframes HeaderAnimation {
+  0% {
+    text-shadow: 0px 0px 30px aqua;
+  }
+  50% {
+    text-shadow: 0px 0px 60px aqua;
+    animation-delay: 2s;
+  }
+  100% {
+    text-shadow: 0px 0px 10px aqua;
+  }
+}
+.header ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+}
+.header ul li {
+  display: inline-block;
+  padding: 4px;
+  font-size: 14px;
+  justify-content: left;
+}
+.header a {
+  background-color: #160324;
+  text-decoration: none;
+  /* menghilangkan dekorasi bawaan dari tag */
+  text-transform: capitalize;
+  color: aqua;
+  padding: 7px;
+  margin-right: 5px;
+  border-radius: 5px;
+  transition: 0.3s ease-in;
+}
+.header a:hover {
+  color: #160324;
+  background-color: aqua;
+}
+.containerHeroGallery {
+  width: auto;
+  height: 350px;
+  overflow: auto;
+  padding: 0px 50px 100px 50px;
+  margin: 50px auto;
+  transition: 2s 4s ease-out;
+  box-shadow: 10px 0 2px 3px whitesmoke, -10px 0 10px 3px whitesmoke;
+  border-radius: 10px;
+}
+.containerHeroGallery:target {
+  height: 500px;
+}
+.containerHero {
+  width: 600px;
+  height: 300px;
+  margin: 50px auto;
+}
+.hero {
+  background-image: url(img/darkfacehalf.jpg);
+  width: auto;
+  height: 336px;
+  /* background-position: 70px 0; */
+  border-top: 2px dashed aqua;
+  border-bottom: 2px dashed aqua;
+  margin: 50px auto;
+  margin-bottom: 20px;
+  transition: 1s;
+  color: azure;
+  font-size: 0;
+  text-align: left;
+  font-family: "Comfortaa", cursive;
+}
+.containerHeroGallery:hover .hero {
+  width: auto;
+  height: 336px;
+  background-position: 240px 0;
+  border-top: 10px solid aqua;
+  border-bottom: 10px solid aqua;
+  text-align: left;
+  text-indent: 0;
+  font-size: 65px;
+  box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.8);
+  border-radius: 20px;
+  overflow: hidden;
+  text-shadow: 0px 0px 10px aqua;
+  letter-spacing: 10px;
+}
+.containerH1 {
+  height: 200px;
+  margin: auto;
+  margin-top: 100px;
+}
+.h1Gallery {
+  font-family: vt323regular;
+  font-size: 100px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px black, 30px 5px 15px aquamarine, -30px -5px 15px fuchsia;
+  color: cyan;
+  line-height: 200px;
+  /* margin: auto; */
+  animation: animationH1 3s alternate infinite ease-in;
+}
+@font-face {
+  font-family: "vt323regular";
+  src: url("font/vt323-regular-webfont.woff2") format("woff2"),
+    url("font/vt323-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes animationH1 {
+  0% {
+    font-size: 100px;
+  }
+  50% {
+    transform: scale(1.5);
+    text-shadow: 0 0 10px black, 30px 10px 20px aquamarine,
+      -30px -10px 20px fuchsia;
+    animation-delay: 0.5s;
+  }
+  100% {
+    font-size: 100px;
+  }
+}
+.containerGallery {
+  width: 1000px;
+  height: 500px;
+  box-shadow: 0 0 10px 3px cyan;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+  box-sizing: border-box;
+}
+/* .gallery ul {
+  box-sizing: border-box;
+} */
+.gallery li {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border: 1px dashed cyan;
+  float: left;
+  margin: 100px 60px 80px 60px;
+  position: relative;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+.gallery li:hover {
+  transform: scale(1.5);
+  border: 1px solid cyan;
+}
+.gallery li,
+.gallery img,
+.gallery span {
+  border-radius: 20px;
+}
+.gallery li span {
+  display: block;
+  width: 200px;
+  height: 0px;
+  background-color: rgba(17, 171, 241, 0.3);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 200px;
+  color: chartreuse;
+  text-shadow: 0 0 5px whitesmoke;
+  opacity: 0;
+  transition: 0.5s ease-in;
+  border-bottom: 10px greenyellow solid;
+  border-top: 10px cyan solid;
+}
+
+.gallery li a:hover span {
+  opacity: 1;
+  height: 190px;
+  border-bottom: none;
+}
+.overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 212, 110, 0.558);
+  z-index: 9999;
+}
+.overlay:target {
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 232, 95, 0.8);
+}
+.containerMRR {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  margin-left: 0;
+  font-family: "silkscreennormal";
+  color: aliceblue;
+  box-sizing: border-box;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.MRRLogo {
+  width: 100px;
+  font-size: 100px;
+  margin: 0;
+  float: left;
+  display: inline;
+  text-align: right;
+  letter-spacing: 1px;
+  word-spacing: 0.1px;
+}
+.MRRLogo2 {
+  width: 200px;
+  font-size: 30px;
+  margin: 0;
+  float: right;
+  display: inline;
+  line-height: 100px;
+}
+@font-face {
+  font-family: "silkscreennormal";
+  src: url("font/slkscr-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.content {
+  margin-top: 120px;
+  width: auto;
+  height: auto;
+  background-color: #051225;
+}
+.main {
+  background-color: #051225;
+  color: white;
+  font: 14px/22px arial, sans-serif;
+  width: 600px;
+  height: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+  overflow: auto;
+}
+.main h2 {
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: left;
+  padding: 2px;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.main .penulis {
+  text-transform: capitalize;
+  text-align: left;
+  padding: 2px;
+  font-size: 11px;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.main a {
+  text-decoration: none;
+  color: aqua;
+}
+
+.main a:hover {
+  font-style: italic;
+}
+.sidebar {
+  width: 350px;
+  height: 600px;
+  font: 12px/20px arial, sans-serif;
+  box-sizing: border-box;
+  float: right;
+  background-image: linear-gradient(to right, #051225, #160324);
+  padding: 15px;
+  padding-left: 30px;
+  text-align: left;
+  color: aliceblue;
+}
+.sidebar h3 {
+  margin: 0;
+  padding: 0px 20px 5px 0px;
+  text-transform: capitalize;
+  color: aliceblue;
+  font-size: 14px;
+}
+.sidebar img {
+  float: left;
+  margin: 0;
+  padding-top: 10px;
+  padding-right: 15px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: deeppink;
+}
+.p2 {
+  width: auto;
+  height: auto;
+  text-align: justify;
+  background-image: linear-gradient(to right, #051225, #160324);
+}
+.p1 {
+  width: auto;
+  height: auto;
+  background-color: #051225;
+  text-align: justify;
+  text-indent: 10px;
+}
+
+.footer {
+  width: auto;
+  height: auto;
+  text-align: center;
+  background-color: #160324;
+}
+.footer .copyright {
+  width: auto;
+  height: auto;
+  color: orange;
+  font-size: 14px;
+  padding: 20px;
+}
+
+/**
+ * Source: http://nicolasgallagher.com/micro-clearfix-hack/
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+.cf {
+  *zoom: 1;
+}
